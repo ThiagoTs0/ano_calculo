@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins";
+}
+html,body{
+    height:100%;
+}
+/*variaveis*/
+:root{
+    --cor1:#864CFF;
+    --cor2:white;
+    --cor3:#151515;
+    --cor4:#0A0A0A;
+    --cor5:#636363;
+    --cor1h:#6638c7;
+    --titulo1:100px;
+    --titulo2:25px;
+    --titulo3:15px;
+}
+main{
+   width:100%;
+   height:inherit;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+}
+/*form*/
+form{
+    width:100%;
+    display:flex;
+    gap:50px;
+}
+form > div{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+}
+form > div > label{
+   color:var(--cor5);
+   font-weight:600;
+}
+form > div > input{
+    width:100px;
+    color:var(--cor4);
+    font-weight:700;
+    font-size:var(--titulo3);
+    padding:17px 20px;
+    border-radius:5px;
+    border-style:outset;
+    transition:1s;
+ }
+form > div > input:focus{
+    outline:none;
+    border-style:inset;
+ }
+/*button e label*/
+input[type="button"]{
+    display:none;
+}
+label[for=butao]{
+    background-image:url("../images/icon-arrow.svg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    width:15px;
+    height:15px !important;
+    padding:15px 15px !important;
+    border:18px solid var(--cor1) !important;
+    background-color:var(--cor1) !important;
+    border-radius:50px;
+    cursor:pointer;
+    position:absolute;
+    right:25%;
+    top:40%;
+}
+label[for=butao]:hover{
+    border:18px solid var(--cor1h);
+    background-color:var(--cor1h);
+}
+label[for=butao]:active{
+    border:18px solid var(--cor4);
+    background-color:var(--cor4);
+}
+
+/*fontes text*/
+div.text > h1{
+    font-size:var(--titulo1);
+    color:var(--cor3);
+    font-weight:700;
+    font-style: italic;
+}
+div.text > h1 > span{
+    font-size:var(--titulo1);
+    color:var(--cor1);
+    font-weight:700;
+    font-style: italic;
+}
